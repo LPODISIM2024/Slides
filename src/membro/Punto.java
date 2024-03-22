@@ -1,7 +1,7 @@
 package membro;
 
 public class Punto {
-	int x, y;
+	public int x, y;
 	public final Punto root;
 	public static final Punto ORIGIN;
 	public static Punto staticPunto;
@@ -35,6 +35,7 @@ public class Punto {
 //		p1.root = new Punto(300, 300); // ERRORE IN COMPILAZIONE
 		p2.root.x = 300; // OK
 		System.out.println("ORIGIN.x:" + Punto.ORIGIN.x);
+		p2.root.x = 5;
 		Punto.valore = 4;
 		System.out.println(Punto.valore);
 //		Punto.ORIGIN = new Punto(1000, 1000); // ERRORE IN COMPILAZIONE
